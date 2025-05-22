@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Coffee House</title>
+  <link rel="stylesheet" href="styles/header.css">
+  <style>
+    body {
+      background-color: #f9f5f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #4b3b2a;
+      margin:0;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      gap: 40px;
+    }
+
+    .contact-info, .contact-form {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      padding: 30px;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .contact-info h2,
+    .contact-form h2 {
+      color: #6f4e37;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .contact-form button {
+      background-color: #6f4e37;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #563927;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #6f4e37;
+      color: white;
+      padding: 1rem;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header style -->
+  <div class="header-flex">
+    <div class="left-section">
+      <img src="./images/logo.png" class="logo-image">
+    </div>
+    <div class="right-section">
+      <div><a href="index.html">Home</a></div>
+      <div><a href="menu.html">Menu</a></div>
+      <div><a href="block.html">Blog</a></div>
+      <div><a href="media.html">Media</a></div>
+      <div><a href="contact.html">Contact</a></div>
+      <div>
+        <img src="./icons/search.svg" style="height: 30px;">
+      </div>
+    </div>
+  </div>
+
+  <!-- 📞 Contact Section -->
+  <section class="contact-container">
+    <div class="contact-info">
+      <h2>Visit Our Café</h2>
+      <p><strong>Address:</strong> Norton University</p>
+      <p><strong>Phone:</strong> 00000000000</p>
+      <p><strong>Email:</strong> leap77671@gmail.com</p>
+      <p><strong>Hours:</strong> Mon - Sun |12:00 AM - 5:00 AM</p>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <input type="comment" write="Your comment" placeholder="Your comment" required />
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Coffee House. All rights reserved.
+  </footer>
+
+</body>
+</html>

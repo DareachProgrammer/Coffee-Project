@@ -1,0 +1,186 @@
+.coffee {
+  width: 100%;
+  position: relative;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the container properly */
+  text-align: center; /* Aligns text center */
+  color: white; /* Default text color */
+  font-family: Arial, sans-serif; /* Choose a font */
+}
+
+.text-line {
+  font-size: 2.5rem; /* Adjust size as needed */
+  font-weight: bold;
+  margin-bottom: 10px; /* Spacing between lines */
+}
+
+.shop-button {
+  background: #6F4E37; /* Coffee brown color */
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.shop-button:hover {
+  background: #5a3c2a; /* Darker brown on hover */
+}
+
+.top {
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+}
+.top-text1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.top-text2 {
+  font-size: 1.2rem;
+  font-weight: 350;
+  margin-bottom: 30px;
+}
+
+.categories-flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  column-gap: 20px;
+}
+.categories-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+  filter: brightness(0.5) contrast(1);
+}
+.categories-container {
+  width: 300px;
+  position: relative;
+  height: 250px;
+  cursor: pointer;
+  overflow: hidden; /* Ensures content stays inside rounded corners */
+}
+
+.categories-text1 {
+  position: absolute;
+  top: 20%; /* Adjust vertically as needed */
+  left: 50%; /* Start from center */
+  transform: translateX(-50%); /* Pull back by 50% of text width */
+  color: white;
+  font-size: 1.5rem;
+  width: 100%; /* Prevents text overflow */
+  text-align: center; /* Ensures text alignment */
+  padding: 0 10px; /* Prevents edge touching */
+}
+
+.view-more-text {
+  position: absolute;
+  bottom: 30%; /* Adjust vertically as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(160, 160, 160);
+  font-weight: 100;
+  text-align: center;
+  width: 100%;
+}
+.categories-container:hover .categories-image {
+  filter: brightness(0.6); /* Lighten image on hover */
+}
+
+.categories-container:hover .view-more-text {
+  color: white; /* Highlight "View More" */
+  text-decoration: underline; /* Optional */
+}
+
+
+.list-milk-shakes-wrapper {
+  width: 100%;
+  overflow-x: auto; /* Enable horizontal scroll */
+  padding: 10px 0;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.list-milk-shakes {
+  display: flex;
+  gap: 20px; /* Space between cards */
+  padding-bottom: 15px; /* Prevents scrollbar overlap */
+  width: max-content; /* Lets content expand horizontally */
+}
+/* Hide scrollbar (optional) */
+.list-milk-shakes-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.milk-shakes-container {
+  position: relative;
+  width: 200px;
+  min-width: 200px;/* Prevents shrinking */
+  background-color: #E4E0E1;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  flex-shrink: 0;/* Prevents card distortion */
+
+}
+/* Center-align text content */
+.milk-shakes-container > div:not(.like-flex):not(.cost-milk-shakes) {
+  text-align: center;
+  margin: 8px 0;
+  font-weight: bold;
+}
+.milk-shakes-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+
+}
+.like-flex {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(213, 213, 213);
+  text-align: center;
+  align-items: center;
+  font-size: 12px;
+  padding: 5px 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.icons {
+  height: 15px;
+  margin-right: 10px;
+}
+.cost-milk-shakes {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 13px;
+  padding: 5px 5px;
+  background-color: rgb(213, 213, 213);
+  border-radius: 7px;
+}
+.buy-button {
+  background-color: #6F4E37;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 13px;
+  border-radius: 10px;
+  margin: 0 auto;/* Center button */
+  width: 80%;
+}

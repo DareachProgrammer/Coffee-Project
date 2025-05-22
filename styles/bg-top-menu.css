@@ -1,0 +1,23 @@
+.vd-coffee {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  position: relative;
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%); /* Centers the container properly */
+  text-align: center; /* Aligns text center */
+  color: white; /* Default text color */
+  font-family: Arial, sans-serif; /* Choose a font */
+}
+
+.text-line {
+  font-size: 3.2rem; /* Adjust size as needed */
+  font-weight: bold;
+  margin-bottom: 10px; /* Spacing between lines */
+}
+
