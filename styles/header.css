@@ -1,0 +1,31 @@
+.header-flex {
+  display: flex;
+  justify-content: space-around;
+  height: 100px; 
+  background-color: #D6C0B3;
+}
+
+.header-flex a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+
+.logo-image {
+  height: 80px;
+  border-radius: 50%;
+  
+}
+
+.right-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 700px;
+}
