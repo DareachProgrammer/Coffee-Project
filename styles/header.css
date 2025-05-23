@@ -29,3 +29,11 @@
   align-items: center;
   width: 700px;
 }
+.right-section a{
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+.right-section a:hover{
+  background-color: #6f4e37;
+}
